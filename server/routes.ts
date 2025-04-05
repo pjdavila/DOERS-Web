@@ -1,11 +1,31 @@
 import type { Express, Request, Response } from "express";
 import { createServer, type Server } from "http";
+import path from "path";
+import fs from "fs";
 import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Serve Spline files from attached_assets
+  app.get("/api/spline/:filename", (req: Request, res: Response) => {
+    const filename = req.params.filename;
+    const filePath = path.resolve(`./attached_assets/${filename}`);
+    
+    // Check if file exists
+    if (fs.existsSync(filePath)) {
+      res.setHeader('Content-Type', 'application/octet-stream');
+      res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
+      const fileStream = fs.createReadStream(filePath);
+      fileStream.pipe(res);
+    } else {
+      res.status(404).json({
+        message: "Spline file not found"
+      });
+    }
+  });
+
   // API routes - prefix all routes with /api
   app.post("/api/contact", async (req: Request, res: Response) => {
     try {

@@ -98,7 +98,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             {/* Spline 3D Scene via iframe */}
-            <div className="relative w-full h-full" style={{ position: 'relative' }}>
+            <div className="w-full h-full" style={{ position: 'relative' }}>
               <div className="relative w-full h-full">
                 <iframe
                   src="https://my.spline.design/rocket-60aa42ea70c39fcb7da106cddb7784de/"
