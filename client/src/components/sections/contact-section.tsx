@@ -81,8 +81,8 @@ const ContactSection = () => {
         />
       </div>
       
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="container mx-auto px-4 md:px-6 xl:px-8 relative z-10 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <Reveal direction="left">
             <h2 className="font-bebas text-4xl md:text-6xl mb-6">LET'S <span className="text-orange">CREATE</span> TOGETHER</h2>
             <p className="font-space text-lg text-gray mb-8">Ready to take your digital presence to the next level? We're here to help transform your vision into reality.</p>
@@ -144,7 +144,7 @@ const ContactSection = () => {
           </Reveal>
           
           <Reveal direction="right">
-            <div className="bg-white bg-opacity-[0.03] backdrop-blur-sm rounded-3xl p-8 border border-gray border-opacity-10 relative">
+            <div className="bg-white bg-opacity-[0.03] backdrop-blur-sm rounded-3xl p-8 md:p-10 border border-gray border-opacity-10 relative max-w-[650px] w-full mx-auto lg:mx-0">
               <h3 className="font-space text-2xl mb-6">Start Your Project</h3>
               
               <Form {...form}>
