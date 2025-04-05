@@ -25,11 +25,11 @@ const ProjectCard = ({
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay }}
     >
-      <div className="aspect-w-16 aspect-h-9 overflow-hidden">
+      <div className="relative w-full h-0 pb-[56.25%] overflow-hidden">
         <motion.img 
           src={image} 
           alt={title} 
-          className="w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover object-center"
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.7 }}
         />
