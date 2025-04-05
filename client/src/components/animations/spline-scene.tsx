@@ -16,28 +16,43 @@ const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
     setIsLoading(false);
   };
 
-  // Try-catch to handle Spline loading errors
+  // Set up error handling
   useEffect(() => {
-    const handleError = () => {
-      console.error("Error loading Spline scene");
-      setHasError(true);
-      setIsLoading(false);
+    // For global errors (general JavaScript errors)
+    const handleGlobalError = (event: ErrorEvent) => {
+      if (event.message.includes('Spline') || event.message.includes('buffer')) {
+        console.error("Error loading Spline scene:", event.message);
+        setHasError(true);
+        setIsLoading(false);
+      }
     };
 
-    window.addEventListener('error', handleError);
+    // Set a timeout to check if loading is taking too long
+    const timeoutId = setTimeout(() => {
+      if (isLoading) {
+        console.warn("Spline scene loading timeout - showing fallback");
+        setHasError(true);
+        setIsLoading(false);
+      }
+    }, 5000); // 5 seconds timeout
+    
+    window.addEventListener('error', handleGlobalError);
     
     return () => {
-      window.removeEventListener('error', handleError);
+      window.removeEventListener('error', handleGlobalError);
+      clearTimeout(timeoutId);
     };
-  }, []);
+  }, [isLoading]);
 
   return (
     <div className={`relative ${className}`}>
-      {/* Always show the SVG fallback for now */}
-      <SpaceAstronautSVG />
+      {hasError && (
+        // Show SVG fallback only if there's an error loading Spline
+        <SpaceAstronautSVG />
+      )}
       
       {/* Loading indicator */}
-      {isLoading && !hasError && (
+      {isLoading && (
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <motion.div
             className="w-12 h-12 rounded-full border-4 border-t-transparent border-orange"
@@ -47,8 +62,7 @@ const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
         </div>
       )}
       
-      {/* Spline scene is disabled for now due to compatibility issues */}
-      {/*
+      {/* Attempt to load the Spline scene */}
       {!hasError && (
         <div className={`transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
           <Spline 
@@ -57,7 +71,6 @@ const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
           />
         </div>
       )}
-      */}
     </div>
   );
 };
