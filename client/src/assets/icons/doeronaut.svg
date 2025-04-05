@@ -1,0 +1,24 @@
+<svg width="350" height="350" viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="175" cy="175" r="175" fill="#111111" />
+  <circle cx="175" cy="175" r="160" fill="#191919" stroke="#FF5A1F" strokeWidth="2" strokeDasharray="5 5" />
+  <g class="doernaut">
+    <circle cx="175" cy="160" r="70" fill="#222222" strokeWidth="2" stroke="#7A3FFF" />
+    <circle cx="175" cy="160" r="60" fill="#000000" />
+    <rect x="150" y="145" width="50" height="35" rx="5" fill="#333333" />
+    <rect x="155" y="150" width="40" height="25" rx="3" fill="#000000" />
+    <circle cx="160" cy="162" r="5" fill="#FF5A1F" />
+    <circle cx="175" cy="162" r="5" fill="#FF5A1F" />
+    <circle cx="190" cy="162" r="5" fill="#FF5A1F" />
+  </g>
+  <g class="helmet-glare">
+    <path d="M210 140 Q220 120 200 125" stroke="#FFFFFF" strokeWidth="3" fill="none" opacity="0.3" />
+  </g>
+  <g class="body">
+    <rect x="160" y="230" width="30" height="60" rx="10" fill="#333333" />
+    <rect x="150" y="290" width="50" height="20" rx="5" fill="#222222" />
+    <rect x="165" y="180" width="20" height="50" rx="5" fill="#444444" />
+    <circle cx="175" cy="215" r="15" fill="#333333" />
+    <rect x="130" y="200" width="25" height="10" rx="5" fill="#444444" transform="rotate(-45 130 205)" />
+    <rect x="195" y="200" width="25" height="10" rx="5" fill="#444444" transform="rotate(45 220 205)" />
+  </g>
+</svg>
