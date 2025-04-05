@@ -5,15 +5,17 @@ import { motion } from 'framer-motion';
 interface SplineSceneProps {
   splineUrl: string;
   className?: string;
+  fallbackContent?: React.ReactNode;
 }
 
-const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
+const SplineScene = ({ splineUrl, className = '', fallbackContent }: SplineSceneProps) => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
 
   // Handle loading state
   const onLoad = () => {
     setIsLoading(false);
+    console.log("Spline scene loaded successfully");
   };
 
   // Set up error handling
@@ -34,7 +36,7 @@ const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
         setHasError(true);
         setIsLoading(false);
       }
-    }, 5000); // 5 seconds timeout
+    }, 10000); // 10 seconds timeout - giving more time for complex scenes
     
     window.addEventListener('error', handleGlobalError);
     
@@ -45,10 +47,10 @@ const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
   }, [isLoading]);
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative ${className}`} style={{ position: 'relative' }}>
       {hasError && (
         // Show SVG fallback only if there's an error loading Spline
-        <SpaceAstronautSVG />
+        fallbackContent || <SpaceAstronautSVG />
       )}
       
       {/* Loading indicator */}
@@ -64,7 +66,7 @@ const SplineScene = ({ splineUrl, className = '' }: SplineSceneProps) => {
       
       {/* Attempt to load the Spline scene */}
       {!hasError && (
-        <div className={`transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
+        <div className={`transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'}`} style={{ height: '100%' }}>
           <Spline 
             scene={splineUrl} 
             onLoad={onLoad}
