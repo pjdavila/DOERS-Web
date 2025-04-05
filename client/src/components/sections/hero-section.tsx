@@ -101,7 +101,7 @@ const HeroSection = () => {
             <div className="relative w-full h-full" style={{ position: 'relative' }}>
               <div className="relative w-full h-full">
                 <iframe
-                  src="https://app.spline.design/file/389cb7ae-877a-42af-83f2-77e6ec6579d3"
+                  src="https://my.spline.design/rocket-60aa42ea70c39fcb7da106cddb7784de/"
                   className={`w-full h-full rounded-3xl transition-opacity duration-500 ${splineLoading ? 'opacity-0' : 'opacity-100'}`}
                   frameBorder="0"
                   allow="autoplay; fullscreen; vr"
