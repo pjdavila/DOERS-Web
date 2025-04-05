@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
+import doersLogo from "../../assets/images/DOERS-Horizontal.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,7 +42,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href="#" className="flex items-center gap-2">
-            <span className="text-white font-bebas text-3xl tracking-wider">DOERS</span>
+            <img src={doersLogo} alt="DOERS Logo" className="h-9" />
             <span className="hidden sm:block text-orange text-xs font-space">SINCE 2012</span>
           </Link>
           

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Twitter, Instagram, Linkedin, Dribbble } from "lucide-react";
+import doersLogo from "../../assets/images/DOERS-Horizontal.png";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center mb-12">
           <Link href="#" className="flex items-center gap-2 mb-6 md:mb-0">
-            <span className="text-white font-bebas text-3xl tracking-wider">DOERS</span>
+            <img src={doersLogo} alt="DOERS Logo" className="h-9" />
             <span className="text-orange text-xs font-space">SINCE 2012</span>
           </Link>
           
