@@ -39,10 +39,10 @@ const Header = () => {
 
   return (
     <header className={headerClasses}>
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-5">
         <div className="flex justify-between items-center">
           <Link href="#" className="flex items-center gap-2">
-            <img src={doersLogo} alt="DOERS Logo" className="h-9" />
+            <img src={doersLogo} alt="DOERS Logo" className="h-16" />
             <span className="hidden sm:block text-orange text-xs font-space">SINCE 2012</span>
           </Link>
           
