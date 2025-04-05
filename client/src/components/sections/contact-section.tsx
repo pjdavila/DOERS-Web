@@ -144,7 +144,7 @@ const ContactSection = () => {
           </Reveal>
           
           <Reveal direction="right">
-            <div className="bg-white bg-opacity-[0.03] backdrop-blur-sm rounded-3xl p-8 border border-gray border-opacity-10">
+            <div className="bg-white bg-opacity-[0.03] backdrop-blur-sm rounded-3xl p-8 border border-gray border-opacity-10 relative">
               <h3 className="font-space text-2xl mb-6">Start Your Project</h3>
               
               <Form {...form}>
