@@ -1,0 +1,146 @@
+{
+  "header": {
+    "since": "DESDE 2012",
+    "navigation": {
+      "home": "INICIO",
+      "services": "SERVICIOS",
+      "work": "TRABAJO",
+      "about": "NOSOTROS",
+      "contact": "CONTACTO"
+    },
+    "cta": "HABLEMOS"
+  },
+  "hero": {
+    "title": "TÚ LO SUEÑAS, NOSOTROS LO HACEMOS",
+    "subtitle": "Creamos productos digitales de vanguardia que elevan tu marca",
+    "cta": "VER NUESTRO TRABAJO",
+    "scroll": "DESPLÁZATE"
+  },
+  "services": {
+    "title": "NUESTROS SERVICIOS DIGITALES",
+    "subtitle": "Soluciones innovadoras para marcas visionarias",
+    "items": {
+      "webDev": {
+        "title": "DESARROLLO WEB",
+        "description": "Sitios web personalizados con experiencias de usuario fluidas e interfaces impresionantes."
+      },
+      "appDev": {
+        "title": "DESARROLLO DE APPS",
+        "description": "Aplicaciones móviles nativas y multiplataforma para iOS y Android."
+      },
+      "uiDesign": {
+        "title": "DISEÑO UI/UX",
+        "description": "Soluciones de diseño centradas en el usuario que atraen y convierten visitantes."
+      },
+      "ecommerce": {
+        "title": "COMERCIO ELECTRÓNICO",
+        "description": "Tiendas online escalables con soluciones de pago seguras y gestión de productos."
+      }
+    }
+  },
+  "work": {
+    "title": "NUESTRO TRABAJO ESTELAR",
+    "subtitle": "Transformando ideas ambiciosas en experiencias digitales extraordinarias para marcas líderes",
+    "projects": {
+      "ottApp": {
+        "category": "APLICACIÓN OTT",
+        "title": "WAPA TV",
+        "description": "Solución de streaming multiplataforma con entrega de contenido personalizado e integración de análisis."
+      },
+      "webRedesign": {
+        "category": "REDISEÑO DE SITIO WEB",
+        "title": "TeleOnce",
+        "description": "Plataforma de contenido de alto rendimiento con programación dinámica y capacidades de transmisión en vivo."
+      },
+      "ecommerce": {
+        "category": "PLATAFORMA DE COMERCIO ELECTRÓNICO",
+        "title": "PRTicket",
+        "description": "Solución integral de venta de entradas con procesamiento seguro de pagos y gestión de eventos."
+      },
+      "interactive": {
+        "category": "EXPERIENCIA INTERACTIVA",
+        "title": "Jeep & RAM",
+        "description": "Sala de exposición digital inmersiva con personalización de vehículos en 3D e integración de generación de leads."
+      }
+    },
+    "viewAll": "VER TODOS LOS PROYECTOS",
+    "viewCase": "VER CASO DE ESTUDIO"
+  },
+  "about": {
+    "title": "SOBRE NOSOTROS",
+    "subtitle": "Desarrolladores y diseñadores experimentados con pasión por la excelencia",
+    "description": "En DOERS, combinamos experiencia técnica con innovación creativa para entregar productos digitales que superan las expectativas. Con más de una década de experiencia, nuestro equipo trabaja incansablemente para transformar tu visión en realidad.",
+    "mission": {
+      "title": "NUESTRA MISIÓN",
+      "description": "Potenciar a las empresas mediante soluciones tecnológicas que impulsen el crecimiento y mejoren la participación de los usuarios."
+    },
+    "vision": {
+      "title": "NUESTRA VISIÓN",
+      "description": "Ser el socio digital líder para empresas visionarias que buscan experiencias online excepcionales."
+    },
+    "stats": {
+      "years": {
+        "number": "12+",
+        "label": "AÑOS DE EXPERIENCIA"
+      },
+      "projects": {
+        "number": "320+",
+        "label": "PROYECTOS COMPLETADOS"
+      },
+      "clients": {
+        "number": "150+",
+        "label": "CLIENTES SATISFECHOS"
+      },
+      "team": {
+        "number": "30+",
+        "label": "MIEMBROS DEL EQUIPO"
+      }
+    }
+  },
+  "contact": {
+    "title": "INICIEMOS UN PROYECTO",
+    "subtitle": "¿Listo para transformar tu presencia digital?",
+    "description": "Completa el formulario a continuación y nos pondremos en contacto contigo en 24 horas.",
+    "form": {
+      "name": {
+        "label": "Tu Nombre",
+        "placeholder": "Ingresa tu nombre completo"
+      },
+      "email": {
+        "label": "Correo Electrónico",
+        "placeholder": "Ingresa tu correo electrónico"
+      },
+      "phone": {
+        "label": "Número de Teléfono",
+        "placeholder": "Ingresa tu número de teléfono"
+      },
+      "message": {
+        "label": "Tu Mensaje",
+        "placeholder": "Cuéntanos sobre tu proyecto..."
+      },
+      "submit": "ENVIAR MENSAJE"
+    },
+    "success": "¡Tu mensaje ha sido enviado con éxito!"
+  },
+  "footer": {
+    "since": "DESDE 2012",
+    "rights": "© 2024 DOERS. Todos los derechos reservados.",
+    "address": "123 Avenida Tecnológica, Distrito Innovate, San Juan, PR 00927",
+    "contact": {
+      "title": "CONTACTO",
+      "email": "hola@doers.com",
+      "phone": "+1 (787) 555-1234"
+    },
+    "social": {
+      "title": "SÍGUENOS",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    }
+  },
+  "language": {
+    "en": "Inglés",
+    "es": "Español"
+  }
+}

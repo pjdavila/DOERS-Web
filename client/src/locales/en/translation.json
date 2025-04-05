@@ -1,0 +1,146 @@
+{
+  "header": {
+    "since": "SINCE 2012",
+    "navigation": {
+      "home": "HOME",
+      "services": "SERVICES",
+      "work": "WORK",
+      "about": "ABOUT",
+      "contact": "CONTACT"
+    },
+    "cta": "LET'S TALK"
+  },
+  "hero": {
+    "title": "YOU DREAM IT, WE DO IT",
+    "subtitle": "We create cutting-edge digital products that elevate your brand",
+    "cta": "SEE OUR WORK",
+    "scroll": "SCROLL DOWN"
+  },
+  "services": {
+    "title": "OUR DIGITAL SERVICES",
+    "subtitle": "Innovative solutions for forward-thinking brands",
+    "items": {
+      "webDev": {
+        "title": "WEB DEVELOPMENT",
+        "description": "Custom websites with seamless user experiences and stunning interfaces."
+      },
+      "appDev": {
+        "title": "APP DEVELOPMENT",
+        "description": "Native and cross-platform mobile applications for iOS and Android."
+      },
+      "uiDesign": {
+        "title": "UI/UX DESIGN",
+        "description": "User-centered design solutions that engage and convert visitors."
+      },
+      "ecommerce": {
+        "title": "E-COMMERCE",
+        "description": "Scalable online stores with secure payment solutions and product management."
+      }
+    }
+  },
+  "work": {
+    "title": "OUR STELLAR WORK",
+    "subtitle": "Transforming ambitious ideas into extraordinary digital experiences for leading brands",
+    "projects": {
+      "ottApp": {
+        "category": "OTT APPLICATION",
+        "title": "WAPA TV",
+        "description": "Multi-platform streaming solution with personalized content delivery and analytics integration."
+      },
+      "webRedesign": {
+        "category": "WEBSITE REDESIGN",
+        "title": "TeleOnce",
+        "description": "High-performance content platform with dynamic scheduling and live streaming capabilities."
+      },
+      "ecommerce": {
+        "category": "E-COMMERCE PLATFORM",
+        "title": "PRTicket",
+        "description": "Comprehensive ticketing solution with secure payment processing and event management."
+      },
+      "interactive": {
+        "category": "INTERACTIVE EXPERIENCE",
+        "title": "Jeep & RAM",
+        "description": "Immersive digital showroom with 3D vehicle customization and lead generation integration."
+      }
+    },
+    "viewAll": "VIEW ALL PROJECTS",
+    "viewCase": "VIEW CASE STUDY"
+  },
+  "about": {
+    "title": "ABOUT US",
+    "subtitle": "Seasoned developers and designers with a passion for excellence",
+    "description": "At DOERS, we combine technical expertise with creative innovation to deliver digital products that exceed expectations. With over a decade of experience, our team works tirelessly to transform your vision into reality.",
+    "mission": {
+      "title": "OUR MISSION",
+      "description": "To empower businesses through technology-driven solutions that drive growth and enhance user engagement."
+    },
+    "vision": {
+      "title": "OUR VISION",
+      "description": "To be the leading digital partner for forward-thinking companies seeking exceptional online experiences."
+    },
+    "stats": {
+      "years": {
+        "number": "12+",
+        "label": "YEARS EXPERIENCE"
+      },
+      "projects": {
+        "number": "320+",
+        "label": "PROJECTS COMPLETED"
+      },
+      "clients": {
+        "number": "150+",
+        "label": "HAPPY CLIENTS"
+      },
+      "team": {
+        "number": "30+",
+        "label": "TEAM MEMBERS"
+      }
+    }
+  },
+  "contact": {
+    "title": "LET'S START A PROJECT",
+    "subtitle": "Ready to transform your digital presence?",
+    "description": "Fill out the form below and we'll get back to you within 24 hours.",
+    "form": {
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your full name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Enter your email address"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number"
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Tell us about your project..."
+      },
+      "submit": "SEND MESSAGE"
+    },
+    "success": "Your message has been sent successfully!"
+  },
+  "footer": {
+    "since": "SINCE 2012",
+    "rights": "© 2024 DOERS. All Rights Reserved.",
+    "address": "123 Tech Avenue, Innovate District, San Juan, PR 00927",
+    "contact": {
+      "title": "CONTACT",
+      "email": "hello@doers.com",
+      "phone": "+1 (787) 555-1234"
+    },
+    "social": {
+      "title": "FOLLOW US",
+      "instagram": "Instagram",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook"
+    }
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

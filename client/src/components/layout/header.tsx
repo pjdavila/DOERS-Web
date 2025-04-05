@@ -2,9 +2,12 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import { Menu, X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import doersLogo from "../../assets/images/DOERS-Horizontal.png";
+import LanguageSwitcher from "../language-switcher";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -28,9 +31,9 @@ const Header = () => {
   };
 
   const navLinks = [
-    { name: "SERVICES", href: "#services" },
-    { name: "WORK", href: "#work" },
-    { name: "ABOUT", href: "#about" },
+    { name: t('header.navigation.services'), href: "#services" },
+    { name: t('header.navigation.work'), href: "#work" },
+    { name: t('header.navigation.about'), href: "#about" },
   ];
 
   const headerClasses = `fixed top-0 w-full z-50 transition-all duration-300 ${
@@ -43,7 +46,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           <Link href="#" className="flex items-center gap-2">
             <img src={doersLogo} alt="DOERS Logo" className="h-16" />
-            <span className="hidden sm:block text-orange text-xs font-space">SINCE 2012</span>
+            <span className="hidden sm:block text-orange text-xs font-space">{t('header.since')}</span>
           </Link>
           
           <nav className="hidden md:flex space-x-8 items-center">
@@ -60,8 +63,9 @@ const Header = () => {
               href="#contact" 
               className="bg-orange text-white px-5 py-2 rounded-full font-space font-medium tracking-wide text-sm hover:bg-opacity-90 transition-all"
             >
-              LET'S TALK
+              {t('header.cta')}
             </a>
+            <LanguageSwitcher />
           </nav>
           
           <button 
@@ -105,8 +109,17 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navLinks.length * 0.1 }}
               >
-                LET'S TALK
+                {t('header.cta')}
               </motion.a>
+              
+              <motion.div
+                className="mt-4 flex justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: navLinks.length * 0.1 + 0.1 }}
+              >
+                <LanguageSwitcher />
+              </motion.div>
             </div>
           </motion.div>
         )}
