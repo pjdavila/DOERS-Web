@@ -11,9 +11,18 @@
     "cta": "LET'S TALK"
   },
   "hero": {
-    "title": "YOU DREAM IT, WE DO IT",
-    "subtitle": "We create cutting-edge digital products that elevate your brand",
-    "cta": "SEE OUR WORK",
+    "title": {
+      "you": "YOU",
+      "dream": "DREAM",
+      "it": "IT",
+      "we": "WE",
+      "do": "DO"
+    },
+    "subtitle": "We fuse creativity and engineering to power your brand's growth with digital solutions that make an impact.",
+    "cta": {
+      "work": "VIEW OUR WORK",
+      "services": "OUR SERVICES"
+    },
     "scroll": "SCROLL DOWN"
   },
   "services": {

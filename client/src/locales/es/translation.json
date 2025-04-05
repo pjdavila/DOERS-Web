@@ -11,9 +11,18 @@
     "cta": "HABLEMOS"
   },
   "hero": {
-    "title": "TÚ LO SUEÑAS, NOSOTROS LO HACEMOS",
-    "subtitle": "Creamos productos digitales de vanguardia que elevan tu marca",
-    "cta": "VER NUESTRO TRABAJO",
+    "title": {
+      "you": "TÚ",
+      "dream": "SUEÑAS",
+      "it": "LO",
+      "we": "NOSOTROS",
+      "do": "HACEMOS"
+    },
+    "subtitle": "Fusionamos creatividad e ingeniería para impulsar el crecimiento de tu marca con soluciones digitales que causan impacto.",
+    "cta": {
+      "work": "VER NUESTRO TRABAJO",
+      "services": "NUESTROS SERVICIOS"
+    },
     "scroll": "DESPLÁZATE"
   },
   "services": {
