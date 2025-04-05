@@ -17,10 +17,14 @@ export default function Home() {
     window.scrollTo(0, 0);
     
     // Check if URL contains ?alt=true
-    const urlParams = new URLSearchParams(window.location.search);
-    const altParam = urlParams.get('alt');
-    if (altParam === 'true') {
-      setUseAltHero(true);
+    try {
+      const urlParams = new URLSearchParams(window.location.search);
+      const altParam = urlParams.get('alt');
+      if (altParam === 'true') {
+        setUseAltHero(true);
+      }
+    } catch (error) {
+      console.error("Error parsing URL params:", error);
     }
   }, []);
 
